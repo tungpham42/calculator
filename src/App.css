@@ -1,0 +1,108 @@
+/* src/App.css */
+body {
+  background-color: #e0e0e0;
+}
+
+.casio-body {
+  background-color: #2b2d30; /* Dark gray chassis */
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to bottom, #323538, #222426);
+}
+
+.casio-brand {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.casio-screen-container {
+  background-color: #9cb4b8; /* Modern LCD blue/gray */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #1a1a1a;
+}
+
+.screen-indicators {
+  font-size: 12px;
+  font-weight: bold;
+  min-height: 18px;
+}
+
+.casio-button {
+  border-radius: 6px !important; /* Circular buttons */
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold !important;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3) !important;
+  border: none !important;
+  transition: all 0.1s !important;
+}
+
+.casio-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) !important;
+}
+.casio-button:hover span,
+.casio-button:active span {
+  color: #000;
+}
+.casio-button:disabled {
+  opacity: 0.3 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+/* Button Categories */
+.btn-shift {
+  background-color: #444;
+  color: #d6a848 !important;
+}
+.btn-alpha {
+  background-color: #444;
+  color: #c4405a !important;
+}
+.btn-nav {
+  background-color: #333;
+  color: #fff !important;
+}
+.btn-math {
+  background-color: #1e1e1e;
+  color: #fff !important;
+}
+.btn-number {
+  background-color: #f0f0f0;
+  color: #000 !important;
+}
+.btn-del-ac {
+  background-color: #d65c5c;
+  color: #fff !important;
+}
+.btn-exe {
+  background-color: #1a2b4c;
+  color: #fff !important;
+} /* Blue EXE button */
+
+.secondary-label {
+  color: #d6a848; /* Yellow shift text */
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+  display: block;
+}
